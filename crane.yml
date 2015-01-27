@@ -1,0 +1,10 @@
+containers:
+  oracle_app:
+    image: genezys/oracle-xe:11.2
+    dockerfile: .
+    run:
+      detach: true
+      publish:
+      - "1522:22"
+      - "1521:1521"
+      - "1580:8080"
