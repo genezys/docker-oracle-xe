@@ -25,6 +25,7 @@ RUN cat /tmp/oracle-xe-11.2.0-1.0.x86_64.rpm.part* > /tmp/oracle-xe-11.2.0-1.0.x
 	&& mv /sbin/sysctl.bak /sbin/sysctl
 
 # Configure Oracle
+# The default password will only be valid for 7 days!
 RUN printf "\
 ORACLE_HTTP_PORT=8080 \n\
 ORACLE_LISTENER_PORT=1521 \n\
