@@ -1,7 +1,7 @@
 FROM centos:centos6
 
 # Add Oracle requirements
-RUN yum install -y libaio bc flex openssh-server
+RUN yum install -y libaio bc flex openssh-server passwd
 
 # Install Oracle XE
 # - Check RPM SHA1
