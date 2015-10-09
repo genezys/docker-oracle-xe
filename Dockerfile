@@ -48,7 +48,7 @@ RUN ssh-keygen -h -t rsa -f /etc/ssh/ssh_host_rsa_key \
 export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe \n\
 export PATH=$ORACLE_HOME/bin:$PATH \n\
 export ORACLE_SID=XE \n\
-' >> /etc/bash.bashrc
+' > /etc/profile.d/oracle-xe.sh
 
 EXPOSE 22 1521 8080
 
